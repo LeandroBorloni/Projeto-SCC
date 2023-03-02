@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Iceland&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --branco: #fff;
+    --vinho: #9F012F;
+    --cinza_escuro: #191919;
+    --vinho_escuro: #680D28;
+}
+
+
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom, #000000e6 70% , #4B0016 , #9F012F );
+}
+
+
+
+/* HEADER */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding: 0 3rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    font-family: 'Goldman';
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.car_image {
+    width: 100vw;
+}
+
+
+
+/* 1 SEÇÃO */
+section {
+    padding: 2rem;
+}
+
+.title {
+    font-family: 'Goldman';
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.title_principal {
+    font-family: 'Iceland';
+    color: var(--branco);
+    font-size: 5rem;
+    margin: 0.5rem;
+}
+
+.texto {
+    font-family: 'Iceland';
+    color: var(--branco);
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.inicial {
+    font-size: 4rem;
+}
+
+.final {
+    font-size: 2.2rem;
+    margin: 1rem;
+}
+
+button {
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--branco);
+    padding: 1.5rem;
+    background-color: var(--vinho);
+    margin: 0.5rem;
+    font-size: 2.2rem;
+    font-family: 'Iceland';
+}
+
+.secundario {
+    background-color: var(--cinza_escuro);
+}
+
+.box_externa {  
+    display: flex;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin: 3rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_interna {
+    border-radius: 3rem;
+    background-color: var(--vinho_escuro);
+    margin: 4rem;
+}
+
