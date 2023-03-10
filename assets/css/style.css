@@ -95,6 +95,7 @@ button {
     margin: 0.5rem;
     font-size: 2.2rem;
     font-family: 'Iceland';
+    cursor: pointer;
 }
 
 .secundario {
@@ -102,19 +103,23 @@ button {
 }
 
 .box_externa {  
-    display: flex;
     border-radius: 3rem;
     background-color: rgba(0, 0, 0, 0.55);
     margin: 3rem;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    padding: 1.5rem;
+
 }
 
 .box_interna {
     border-radius: 3rem;
     background-color: var(--vinho_escuro);
     margin: 4rem;
+    padding: 3rem;
+}
+
+.box_interna_flex {
+    display: flex;
+    flex-direction: row;
 }
 
