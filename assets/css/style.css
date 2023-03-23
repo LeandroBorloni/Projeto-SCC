@@ -119,7 +119,7 @@ a{
   
 
 
-/* 1 SEÇÃO */
+/* 1 SEÇÃO  (SERVIÇOS) */
 section {
     padding: 2rem;
 }
@@ -190,3 +190,47 @@ button {
     flex-direction: row;
 }
 
+
+/* 2 SEÇÃO (SOBRE) */
+#quem-somos ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+#quem-somos li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+
+.card-image img {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 1s, bottom 1s;
+}
+
+#quem-somos li:hover .card-info{
+  opacity: 1;
+  bottom: 25%;
+}
+
+h3 {
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: 'Iceland';
+  color: var(--branco);
+  margin: 2rem 2rem;
+}
