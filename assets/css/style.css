@@ -121,7 +121,7 @@ a{
 
 /* 1 SEÇÃO  (SERVIÇOS) */
 section {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .title {
@@ -191,6 +191,7 @@ button {
 }
 
 
+
 /* 2 SEÇÃO (SOBRE) */
 #quem-somos ul{
   display: flex;
@@ -233,4 +234,60 @@ h3 {
   font-family: 'Iceland';
   color: var(--branco);
   margin: 2rem 2rem;
+}
+
+
+
+/* 3 SEÇÃO (CONTATO) */
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#contato form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  width: 80%;
+  padding: 4rem;
+}
+
+#contato form h1{
+  position: absolute;
+  top: -10%;
+  left: 38%;
+}
+
+#contato form #checkbox-pacotes {
+  padding: 2rem;
+
+}
+
+#contato form #titulo-observacoes{
+  grid-column: 1;
+}
+
+#contato form #observacoes{
+  grid-column: 1;
+  width: 100%;
+  height: 90px;
+}
+
+label {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-family: 'Iceland';
+  color: var(--branco);
+  padding: 1rem;
+}
+
+input#cidade, input#email, input#nome{
+  width: 60%;
 }
