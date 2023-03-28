@@ -280,7 +280,7 @@ h3 {
   height: 90px;
 }
 
-label {
+label, output {
   margin-top: 1rem;
   font-size: 2.5rem;
   font-family: 'Iceland';
