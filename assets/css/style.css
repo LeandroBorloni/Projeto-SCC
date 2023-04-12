@@ -33,12 +33,26 @@ body {
   z-index: 11;
 }
 
-
 #hamburguer .linha {
   width: 100%;
   height: .5rem;
   background-color: #fff;
   box-shadow: 0 .2rem .2rem #000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  right: -20rem;
+  height: 100vh;
+  width: 20rem;
+  z-index: 10;
+  transition: right 1s;
+  background-color: var(--cinza_escuro);
 }
 
 #menu li {
@@ -58,20 +72,21 @@ body {
   right: 0;
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1rem 4rem;
 }
 
-nav ul {
+.nav ul {
     display: flex;
     flex-direction: row;
+
 }
 
-nav ul li {
+.nav ul li {
     padding: 0 3rem;
     list-style: none;
     cursor: pointer;
@@ -94,8 +109,8 @@ a{
 }
 
 .focus-in-expand2 {
-	-webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+	        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 }
 
 .slide-in-bck-center {
