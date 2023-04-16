@@ -7,157 +7,163 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
     <title>SCC</title>
 </head>
 <body>
-    <nav id="hamburguer-menu-nav">
-        <div id="hamburguer">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
-        </div>
-        <ul id="menu" class="menu-show">
-            <li>
-                <a href="#home">
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="#servicos">
-                    <i class="fa-solid fa-briefcase"></i>
-                    Serviços
-                </a>
-            </li>
-            <li>
-                <a href="#sobre">
-                    <i class="fa-solid fa-users"></i>
-                    Sobre 
-                </a>
-            </li>
-            <li>
-                <a href="#contato_botao">
-                    <i class="fa-solid fa-phone"></i>
-                    Contato
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <div id="home" class="nav">
-            <img class="focus-in-expand" src="assets/images/logo_scc.svg" alt="Logo da SCC (Specialized Car Consulting)">
-            <ul>
-                <li><a class="focus-in-expand2" href="#servicos">Serviços</a></li>
-                <li><a class="focus-in-expand2" href="#sobre">Sobre</a></li>
-                <li><a class="focus-in-expand2" href="#contato_botao">Contato</a></li>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hide">
+        <nav id="hamburguer-menu-nav">
+            <div id="hamburguer">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicos">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobre">
+                        <i class="fa-solid fa-users"></i>
+                        Sobre 
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato_botao">
+                        <i class="fa-solid fa-phone"></i>
+                        Contato
+                    </a>
+                </li>
             </ul>
-        </div>
-        <img class="car_image slide-in-bck-center" src="assets/images/car_image.svg" alt="Foto de um Carro em uma vitrine de Concessionária">
-    </header>
-    <section>
-        <h1 id="servicos" class="title inicial">Serviços</h1>
-        <div class="box_externa">
-            <h2 class="title_principal">Consultoria</h2>
-            <p class="texto">Atráves da análise de seu perfil e de seus objetivos, 
-                encontramos um carro ideal que atenda suas expectativas e seu budget!</p>
-            <button>Tenho interesse!</button>
-            <div class="box_interna_flex">
-                <div class="box_interna">
-                    <h2 class="title_principal">Vistoria</h2>
-                    <p class="texto">Vistoria completa do veículo, desde avaliação visual até verificação
-                        de documentos e inspeção com instrumentos adequados que garantem 
-                    perfeito funcionamento de seu novo carro.</p>
-                    <button class="secundario">Vistoria!</button>
-                </div>
-                <div class="box_interna">
-                    <h2 class="title_principal">Documentação</h2>
-                    <p class="texto">Sem burocracia! Toda a documentação pendente de seu novo veículo fica 
-                        em nossos cuidados para alteração de nome, renovação para placa PIV, 
-                        licenciamento, dentre outros.</p>
-                    <button class="secundario">Documentação!</button>
-                </div>
+        </nav>
+        <header>
+            <div id="home" class="nav">
+                <img class="focus-in-expand" src="assets/images/logo_scc.svg" alt="Logo da SCC (Specialized Car Consulting)">
+                <ul>
+                    <li><a class="focus-in-expand2" href="#servicos">Serviços</a></li>
+                    <li><a class="focus-in-expand2" href="#sobre">Sobre</a></li>
+                    <li><a class="focus-in-expand2" href="#contato_botao">Contato</a></li>
+                </ul>
             </div>
-            <h2 class="title final">Atendemos em São Paulo e região! Entre em contato conosco!</h2>
-        </div>
-    </section>
-    <section id="quem-somos">
-        <h1 id="sobre" class="title inicial sobre">Quem somos</h1>
-        <ul>
-            <li>
-                <div class="card-image">
-                    <img src="./assets/images/Card1.svg" alt="">    
+            <img class="car_image slide-in-bck-center" src="assets/images/car_image.svg" alt="Foto de um Carro em uma vitrine de Concessionária">
+        </header>
+        <section>
+            <h1 id="servicos" class="title inicial">Serviços</h1>
+            <div class="box_externa">
+                <h2 class="title_principal">Consultoria</h2>
+                <p class="texto">Atráves da análise de seu perfil e de seus objetivos, 
+                    encontramos um carro ideal que atenda suas expectativas e seu budget!</p>
+                <button>Tenho interesse!</button>
+                <div class="box_interna_flex">
+                    <div class="box_interna">
+                        <h2 class="title_principal">Vistoria</h2>
+                        <p class="texto">Vistoria completa do veículo, desde avaliação visual até verificação
+                            de documentos e inspeção com instrumentos adequados que garantem 
+                        perfeito funcionamento de seu novo carro.</p>
+                        <button class="secundario">Vistoria!</button>
+                    </div>
+                    <div class="box_interna">
+                        <h2 class="title_principal">Documentação</h2>
+                        <p class="texto">Sem burocracia! Toda a documentação pendente de seu novo veículo fica 
+                            em nossos cuidados para alteração de nome, renovação para placa PIV, 
+                            licenciamento, dentre outros.</p>
+                        <button class="secundario">Documentação!</button>
+                    </div>
                 </div>
-                <div class="card-info">
-                    <h3>Constante evolução visando cada vez mais conhecimento</h3>
-                </div>
-            </li>
-            <li>
-                <div class="card-image">
-                    <img src="./assets/images/Card2.svg" alt=""> 
-                </div>
-                <div class="card-info">
-                    <h3>Preços exclusivos e  negociáveis</h3>
-                </div>
-            </li>
-            <li>
-                <div class="card-image">
-                    <img src="./assets/images/Card3.svg" alt=""> 
-                </div>
-                <div class="card-info">
-                    <h3>Alinhamento prévio de ideias</h3>
-                </div>
-            </li>
-            <li>
-                <div class="card-image">
-                    <img src="./assets/images/Card4.svg" alt=""> 
-                </div>
-                <div class="card-info">
-                    <h3>Equipe preparada para atender suas expectativas </h3>
-                </div>
-            </li>
-            <li>
-                <div class="card-image">
-                    <img src="./assets/images/Card5.svg" alt=""> 
-                </div>
-                <div class="card-info">
-                    <h3>Melhor localização de São Paulo</h3>
-                </div>
-            </li>
-            <li>
-                <div class="card-image">
-                    <img src="./assets/images/Card6.svg" alt=""> 
-                </div>
-                <div class="card-info">
-                    <h3>Análise individual e tratamento exclusivo</h3>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id="contato">
-        <form action="#" id="contato_botao">
-            <h1 class="title inicial contato">Fale Conosco!</h1>
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" placeholder="Digite seu nome completo">
-            <label for="email">Email: </label>
-            <input type="text" id="email">
-            <label for="cidade">Cidade: </label>
-            <input type="text" id="cidade">
-            <div>
-                <label for="">Pacotes:</label>
-                <div id="checkbox-pacotes">
-                    <input type="radio" id="consultoria" name="layout">
-                    <label for="consultoria">Consultoria</label>
-                    <input type="radio" id="vistoria" name="layout">
-                    <label for="vistoria">Vistoria</label>
-                    <input type="radio" id="documentacao" name="layout">
-                    <label for="documentacao">Documentação</label>
-                </div>
-                <output id="preco">R$ 0,00</output>
+                <h2 class="title final">Atendemos em São Paulo e região! Entre em contato conosco!</h2>
             </div>
-            <label for="observacoes" id="titulo-observacoes">Observações: </label>
-            <input type="text" id="observacoes" placeholder="Conte para nós brevemente sobre seus objetivos!">
-        </form>
-    </section>
+        </section>
+        <section id="quem-somos">
+            <h1 id="sobre" class="title inicial sobre">Quem somos</h1>
+            <ul>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Card1.svg" alt="">    
+                    </div>
+                    <div class="card-info">
+                        <h3>Constante evolução visando cada vez mais conhecimento</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Card2.svg" alt=""> 
+                    </div>
+                    <div class="card-info">
+                        <h3>Preços exclusivos e  negociáveis</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Card3.svg" alt=""> 
+                    </div>
+                    <div class="card-info">
+                        <h3>Alinhamento prévio de ideias</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Card4.svg" alt=""> 
+                    </div>
+                    <div class="card-info">
+                        <h3>Equipe preparada para atender suas expectativas </h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Card5.svg" alt=""> 
+                    </div>
+                    <div class="card-info">
+                        <h3>Melhor localização de São Paulo</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Card6.svg" alt=""> 
+                    </div>
+                    <div class="card-info">
+                        <h3>Análise individual e tratamento exclusivo</h3>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="contato">
+            <form action="#" id="contato_botao">
+                <h1 class="title inicial contato">Fale Conosco!</h1>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo">
+                <label for="email">Email: </label>
+                <input type="text" id="email">
+                <label for="cidade">Cidade: </label>
+                <input type="text" id="cidade">
+                <div>
+                    <label for="">Pacotes:</label>
+                    <div id="checkbox-pacotes">
+                        <input type="radio" id="consultoria" name="layout">
+                        <label for="consultoria">Consultoria</label>
+                        <input type="radio" id="vistoria" name="layout">
+                        <label for="vistoria">Vistoria</label>
+                        <input type="radio" id="documentacao" name="layout">
+                        <label for="documentacao">Documentação</label>
+                    </div>
+                    <output id="preco">R$ 0,00</output>
+                </div>
+                <label for="observacoes" id="titulo-observacoes">Observações: </label>
+                <input type="text" id="observacoes" placeholder="Conte para nós brevemente sobre seus objetivos!">
+            </form>
+        </section>
+    </main>
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/menu.js"></script>

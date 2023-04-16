@@ -2,6 +2,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -20,6 +21,37 @@ body {
 
 
 /* HEADER */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.spin {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 16px solid #999;
+  border-top: 16px solid #4B0016;
+  animation: spin 1.5s linear infinite;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #hamburguer {
   display: flex;
   justify-content: space-between;
@@ -343,4 +375,52 @@ label, output {
 
 input#cidade, input#email, input#nome{
   width: 60%;
+}
+
+@media (max-width: 980px) {
+  #quem-somos ul{
+    flex-direction: column;
+  }
+
+  .nav ul{
+    display: none;
+  }
+
+  .box_interna_flex {
+    flex-direction: column;
+  }
+
+  #contato form h1 {
+    left: 30%;
+  }
+
+  input#cidade, input#email, input#nome {
+    width: 45%;
+  }
+}
+
+@media (max-width: 590px) {
+  #contato form h1{
+    left: 15%;
+  }
+
+  input#cidade, input#email, input#nome {
+    width: 100%;
+  }
+
+  .box_interna h2 {
+    font-size: 3rem;
+  }
+
+  .box_interna p {
+    font-size: 2rem;
+  }
+
+  .box_externa p {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 1rem;
+  }
 }
